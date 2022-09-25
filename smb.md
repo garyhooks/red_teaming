@@ -48,6 +48,15 @@ Sometimes this works and provides the hostname
         support-tools   Disk      support staff tools
         SYSVOL          Disk      Logon server share 
 ```
+
+Connect to specific share to get command line access. Use _get_ and _put_ if successful 
+> smbclient //10.10.11.174/support-tools
+
+Or you can use curl:
+> curl --upload-file /path/to/file.ext  -u 'DOMAIN\Username' smb://172.16.17.52/ShareName/
+
+Or you can use **smbget**
+> smbget smb://PATH/TO/FILE/test.txt
                                                    
 ### rpclient
 
