@@ -61,5 +61,15 @@ netshareenum
 netshareenumall
 ```
 
+### enum4linux
 
+Can enumerate and extract information from Windows and Linux systems, including the following: 
+
+Domain and group membership
+User listings
+Shares on a device (drives and folders)
+Password policies on a target
+The operating system of a remote target
+
+> enum4linux 10.10.11.174 
 
