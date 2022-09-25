@@ -2,6 +2,7 @@
 ### strings
 
 > strings file.exe
+> strings -n 6 filename.exe
 > strings file.exe | grep Registry
 > strings file.exe | grep Create
 
