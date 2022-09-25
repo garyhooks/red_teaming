@@ -18,11 +18,14 @@ Identify the NetBIOS names and associated IP addresses
 
 > nmblookup -A 10.10.11.174
 
-### nmap nbstat script
+### nmap scripts
 
 This attempts to retrieve NetBIOS and MAC addresses
-
 > nmap --script nbstat.nse 10.10.11.174
+
+Attempt to access and enumerate shares
+> nmap --script smb-enum-shares -p139,445 10.10.11.174
+
 
 ### ping reverse name resolution
 
@@ -44,6 +47,17 @@ Sometimes this works and provides the hostname
         SYSVOL          Disk      Logon server share 
 ```
                                                    
+### rpclient
+
+Enumerate users with share access
+
+> rpcclient -U "" 10.10.11.174
+
+If successful utilise options:
+```
+netshareenum
+netshareenumall
+```
 
 
 
