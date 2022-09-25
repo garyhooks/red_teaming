@@ -75,3 +75,12 @@ Host script results:
 |     dns.microsoft.com - 20.112.52.29
 ```
 
+### dnsrecon
+
+This searches cached dns records as well as current ones
+
+> dnsrecon -d domain.com
+
+### fierce
+
+> fierce --domain domain.com
