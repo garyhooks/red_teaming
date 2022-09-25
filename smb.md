@@ -21,11 +21,13 @@ Identify the NetBIOS names and associated IP addresses
 ### nmap scripts
 
 This attempts to retrieve NetBIOS and MAC addresses
-> nmap --script nbstat.nse 10.10.11.174
+> sudo nmap -Pn --script nbstat.nse 10.10.11.174
 
 Attempt to access and enumerate shares
-> nmap --script smb-enum-shares -p139,445 10.10.11.174
+> sudo nmap -Pn --script smb-enum-shares -p139,445 10.10.11.174
 
+Test all smb vuln scripts against target machine
+> sudo -Pn nmap --script smb-vuln* 10.10.11.174
 
 ### ping reverse name resolution
 
