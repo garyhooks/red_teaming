@@ -1,8 +1,12 @@
 
+Check **/robots.txt**
 
+### nmap
+
+**-A** enables OS detection 
 > nmap -Pn -sV -p 80 10.10.11.170
-
-> map -Pn -sV -p 80 10.10.11.170 --script=*http*
+> nmap -Pn -sV -p 80 10.10.11.170 --script=*http*
+> sudo nmap -Pn -A -v -p 80 10.10.11.170
 
 ### nikto 
 
@@ -35,6 +39,7 @@
 
 ### gobuster
 
+> gobuster dir -u http://10.10.11.170:8080 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 > gobuster dir -u http://10.10.11.170:8080 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x .php,.html,.txt
 
 
