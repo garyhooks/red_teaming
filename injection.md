@@ -1,3 +1,14 @@
+
+```
+{{7*7}}
+${7*7}
+<%= 7*7 %>
+${{7*7}}
+#{7*7}
+```
+
+### sqlmap
+
 --level=5 highest level
 --risk=3 highest level 
 --batch - run without asking any questions
