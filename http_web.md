@@ -31,6 +31,14 @@
 + 1 host(s) tested
 ```
 
+# Locate Directories
+
+### gobuster
+
+> gobuster dir -u http://10.10.11.170:8080 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x .php,.html,.txt
+
+
+
 ### get OPTIONS
 
 > curl -i -X OPTIONS 10.10.11.170:8080                                                                                                                                              130 ⨯
