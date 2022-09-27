@@ -24,3 +24,8 @@ Service detection performed. Please report any incorrect results at https://nmap
 ```
 
 > sudo nmap -Pn -sT -sV -oN $FILENAME $IP --script=*
+
+-sC - default scripts
+-sV - enumerate versions
+-oA - output all formats 
+> sudo nmap -sC -sV -oA results/
