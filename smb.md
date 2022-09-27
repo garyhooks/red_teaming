@@ -10,6 +10,9 @@ Identify hostname and operating system type
 
 > cme smb 10.10.11.13
 
+Display shares and permissions
+> cme smb 10.10.11.13 -u bob -p bobspassword --shares
+
 ### nbtscan
 
 Windows machines provide a service on UDP Port 137 which listens for queries on NetBIOS requests. When it receives a query it responds with a list of services it provides
