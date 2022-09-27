@@ -4,6 +4,11 @@
 
 **Port 445** is used by Microsoft for Active Directory services as well as SMB (Server Message Block) protocol. SMB is an application layer protocol which allows the sharing of files, printers and other communication between different endpoints. 
 
+### cme (CrackMapExec)
+
+Identify hostname and operating system type
+
+> cme smb 10.10.11.13
 
 ### nbtscan
 
