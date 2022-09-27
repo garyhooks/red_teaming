@@ -42,6 +42,9 @@ Check **/robots.txt**
 > gobuster dir -u http://10.10.11.170:8080 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 > gobuster dir -u http://10.10.11.170:8080 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x .php,.html,.txt
 
+With authentication:
+
+> gobuster -U username -P password -u http://URL -x php -w /wordlist.txt 
 
 
 ### get OPTIONS
