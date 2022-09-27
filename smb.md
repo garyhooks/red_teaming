@@ -6,7 +6,7 @@
 
 ### cme (CrackMapExec)
 
-Identify hostname and operating system type
+Identify hostname and operating system type. Can also be utilised for ldap, msssql, smb, ssh and winrm
 
 > cme smb 10.10.11.13
 
