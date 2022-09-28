@@ -29,3 +29,6 @@ Service detection performed. Please report any incorrect results at https://nmap
 -sV - enumerate versions
 -oA - output all formats 
 > sudo nmap -sC -sV -oA results/
+
+Syn Scan, OS discovery, no ping, all ports, get web titles
+> nmap -sS -A -PN -p- --script=http-title
