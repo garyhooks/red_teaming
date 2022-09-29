@@ -30,5 +30,5 @@ Service detection performed. Please report any incorrect results at https://nmap
 -oA - output all formats 
 > sudo nmap -sC -sV -oA results/
 
-Syn Scan, OS discovery, no ping, all ports, get web titles
-> nmap -sS -A -PN -p- --script=http-title
+Syn Scan, OS discovery, no ping, all ports, get web titles and output in all formats
+> sudo nmap -sS -sV -A -Pn --script=http-title 10.129.240.118 -oA nmap/
